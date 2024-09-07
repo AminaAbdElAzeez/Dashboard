@@ -1,0 +1,22 @@
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #5b748a;
+  color: #fff;
+}
+.not-found > h2 {
+  text-transform: capitalize;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.not-found > h2 + p {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 430px) {
+  .not-found {
+    padding: 834px 0;
+  }
+}

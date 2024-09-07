@@ -84,7 +84,7 @@
   position: relative;
   width: 100%;
 }
-.eyeBtn > i {
+.eyeBtn {
   position: absolute;
   right: 15px;
   top: 23px;

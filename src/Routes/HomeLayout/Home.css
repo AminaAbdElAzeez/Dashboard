@@ -69,10 +69,11 @@
   .home,
   .home-content {
     width: 100%;
+    padding: 218px 0;
   }
   .left-home {
     width: 300px;
-    height: 350px;
+    height: 400px;
     margin: 0 auto 20px auto;
     background-position: center;
   }

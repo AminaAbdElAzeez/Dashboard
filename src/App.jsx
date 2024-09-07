@@ -2,6 +2,8 @@ import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
 import Spinner from "./Components/Spinner/Spinner";
+import NotFoundPage from "./Routes/NotFound/page.jsx";
+import ErrorPage from "./Routes/ErrorPage/page.jsx";
 
 const DashboardLayout = lazy(() =>
   import("./Routes/DashboardLayout/page/Page.jsx")
@@ -46,6 +48,7 @@ const routes = createBrowserRouter([
         </Suspense>
       </ProtectedRoute>
     ),
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Root /> },
       { path: "team", element: <Team /> },
@@ -57,6 +60,7 @@ const routes = createBrowserRouter([
       { path: "line", element: <LineChart /> },
     ],
   },
+  { path: "*", element: <NotFoundPage /> },
 ]);
 
 function App() {
