@@ -56,6 +56,7 @@ const Team = () => {
         const users = response.data.map((user) => ({
           key: user.id,
           id: user.id,
+          phone: user.phone.slice(0, 12),
           name: user.name,
           email: user.email,
           age: Math.floor(Math.random() * 50) + 20,

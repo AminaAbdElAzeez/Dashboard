@@ -66,7 +66,7 @@ const Contacts = () => {
         id: user.id,
         name: user.name,
         age: Math.floor(Math.random() * 50) + 20,
-        phone: user.phone,
+        phone: user.phone.slice(0, 12),
         email: user.email,
         address: {
           street: user.address.street,
