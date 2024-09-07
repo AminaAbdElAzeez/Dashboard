@@ -17,6 +17,7 @@ function ProfileForm() {
   const [formValid, setFormValid] = useState(false);
   const [imagePreview, setImagePreview] = useState("");
   const [fileInputKey, setFileInputKey] = useState(Date.now());
+  const [toastData, setToastData] = useState({ username: "", image: "" });
 
   const inputs = [
     {
@@ -102,6 +103,11 @@ function ProfileForm() {
     ) {
       setFormValid(true);
       setShowToast(true);
+
+      setToastData({
+        username: values.username,
+        image: imagePreview,
+      });
 
       const formData = new FormData();
       formData.append("name", values.username);
@@ -197,11 +203,11 @@ function ProfileForm() {
       {showToast && (
         <div className="toast">
           <p style={{ marginBottom: "10px" }}>
-            Welcome <strong>{values.username}</strong>!
+            Welcome <strong>{toastData.username}</strong>!
           </p>
-          {imagePreview && (
+          {toastData.image && (
             <img
-              src={imagePreview}
+              src={toastData.image}
               alt="Uploaded Image"
               className="uploaded-image"
             />

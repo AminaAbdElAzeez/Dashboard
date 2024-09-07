@@ -1,3 +1,7 @@
+/* .input-container {
+  width: 400px;
+  margin: 0 auto;
+} */
 .form-input {
   padding: 15px;
   margin: 15px 0px;
@@ -15,6 +19,7 @@
   -ms-transition: outline 0.5s, border 0.5s;
   -o-transition: outline 0.5s, border 0.5s;
 }
+
 .form-label {
   display: block;
   font-size: 14px;
