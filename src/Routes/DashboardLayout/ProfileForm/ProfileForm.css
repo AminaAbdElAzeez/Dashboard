@@ -6,7 +6,7 @@ form {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  width: 400px;
+  /* width: 400px; */
   position: relative;
 }
 .form-link {
@@ -36,7 +36,7 @@ form {
 }
 .toast {
   position: absolute;
-  top: 50px;
+  top: 35%;
   left: 50%;
   background-color: #062148;
   color: #fff;
@@ -44,14 +44,14 @@ form {
   border-radius: 8px;
   opacity: 0.9;
   z-index: 9999;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 90%;
   text-transform: capitalize;
   animation: fadeInOut 3.5s ease-in-out 1;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   -webkit-animation: fadeInOut 3.5s ease-in-out 1;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
