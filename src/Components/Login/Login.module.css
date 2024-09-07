@@ -1,0 +1,115 @@
+.form {
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  -ms-border-radius: 0 15px 15px 0;
+  -o-border-radius: 0 15px 15px 0;
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form > h2 {
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+.form > h2 + p {
+  color: #888;
+  font-style: italic;
+  font-family: cursive;
+  margin-bottom: 25px;
+}
+.input {
+  padding: 15px;
+  margin: 10px 0px 20px 0;
+  display: block;
+  width: 100%;
+  color: #062148;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #062148;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: border 0.5s;
+  -webkit-transition: border 0.5s;
+  -moz-transition: border 0.5s;
+  -ms-transition: border 0.5s;
+  -o-transition: border 0.5s;
+}
+.input:focus {
+  outline: 2px solid #062148;
+  border: none;
+}
+.label {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  color: #062148;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  border: 3px solid #062148;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  border-radius: 15px;
+  background-color: #062148;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -ms-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #062148;
+}
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+.eyeBtn > i {
+  position: absolute;
+  right: 15px;
+  top: 23px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #062148;
+  font-size: 22px;
+}
+@media screen and (max-width: 850px) {
+  .form {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .form {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .form > h2 + p {
+    font-size: 15px;
+  }
+}

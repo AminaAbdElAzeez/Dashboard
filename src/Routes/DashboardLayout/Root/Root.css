@@ -1,0 +1,10 @@
+.dash-title {
+  color: #cd201f;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.dash-title + p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}

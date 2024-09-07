@@ -1,0 +1,48 @@
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row3-item {
+  width: 49%;
+}
+.row3-item > h2 {
+  color: #cd201f;
+  margin-bottom: 30px;
+  position: relative;
+  width: max-content;
+}
+.row3-item > h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: #cd201f;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
+}
+.row3-item > h2:hover::after {
+  width: 100%;
+}
+@media screen and (max-width: 1113px) {
+  .row3 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .row3-item {
+    width: 80%;
+  }
+  .row3-item:first-child {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .row3-item {
+    width: 100%;
+  }
+}

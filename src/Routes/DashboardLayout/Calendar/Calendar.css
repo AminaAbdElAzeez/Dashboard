@@ -1,0 +1,55 @@
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.notes-month section {
+  font-size: 28px;
+}
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.events-list li {
+  margin-bottom: 10px;
+}
+.events-list ul {
+  padding-left: 20px;
+}
+.toggle-sidebar-btn {
+  margin-bottom: 20px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.toggle-sidebar-btn:hover {
+  background-color: #40a9ff;
+}
+.toggle-sidebar-btn:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .toggle-sidebar-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .notes-month {
+    font-size: 24px;
+  }
+  .notes-month section {
+    font-size: 24px;
+  }
+  .events-list ul {
+    padding-left: 10px;
+  }
+}
