@@ -22,6 +22,11 @@
   -o-border-radius: 15px 0 0 15px;
   position: relative;
 }
+.right-home {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
 .left-home-wrapper {
   position: absolute;
   left: 0;
@@ -71,6 +76,11 @@
   .home-content {
     width: 100%;
     padding: 218px 0;
+  }
+  .right-home {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
   }
   .left-home {
     width: 300px;
