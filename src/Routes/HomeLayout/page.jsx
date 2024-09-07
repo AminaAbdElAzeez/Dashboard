@@ -55,6 +55,7 @@ function Home() {
     <div className="home">
       <div className="home-content">
         <div className="left-home">
+          <Toast message={toastMessage} onClose={handleCloseToast} />
           <div className="left-home-wrapper">
             <h1>welcome back!</h1>
             <p>
@@ -62,7 +63,6 @@ function Home() {
             </p>
           </div>
         </div>
-
         <Login
           name={name}
           setName={setName}
@@ -72,8 +72,6 @@ function Home() {
           setPassword={setPassword}
           handleLogin={handleLogin}
         />
-
-        <Toast message={toastMessage} onClose={handleCloseToast} />
       </div>
     </div>
   );
